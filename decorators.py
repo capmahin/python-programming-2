@@ -15,4 +15,10 @@ def cough_dec(func):
 def question():
     print('can you give me a discount on that?')
 
+@cough_dec
+
+def answer():
+    print("it's only 50p you cheapskate")
+
 question()    
+answer()
