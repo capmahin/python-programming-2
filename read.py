@@ -21,4 +21,4 @@ def sequence_filer(line):
 
 with open('files/dna_sequence.txt') as dna_file:
     lines = dna_file.readlines()
-    filter(sequence_filer, lines)
+    print(list(filter(sequence_filer, lines)))
