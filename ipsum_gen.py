@@ -16,5 +16,5 @@ with open('ipsum.txt') as ipsum_original:
 
    for n in range(paragraphs):
       ninja_text = list(map(ninjarize, items))
-      with open('ninja_ipsum.txt')as ipsum_ninja:
-         ipsum_ninja.write(''.join(ninja_text)* '\n\n')
+      with open('ninja_ipsum.txt','a')as ipsum_ninja:
+         ipsum_ninja.write(''.join(ninja_text)+ '\n\n') 
